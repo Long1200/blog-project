@@ -1,0 +1,57 @@
+{
+  "id": 736397,
+  "num_rows": 200,
+  "file_format": "csv",
+  "name": "LibraryCards",
+  "include_header": true,
+  "columns": [
+    {
+      "name": "Id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "CardNumber",
+      "null_percentage": 0,
+      "type": "Character Sequence",
+      "format": "",
+      "formula": "\"TV\" + field('Id').to_s.rjust(4,\"0\")"
+    },
+    {
+      "name": "StudentName",
+      "null_percentage": 0,
+      "type": "Full Name",
+      "formula": null
+    },
+    {
+      "name": "ExpiryDate",
+      "null_percentage": 0,
+      "type": "Datetime",
+      "min": "1/1/2026",
+      "max": "12/31/2035",
+      "format": "%Y-%m-%d",
+      "formula": null
+    },
+    {
+      "name": "Status",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    }
+  ]
+}

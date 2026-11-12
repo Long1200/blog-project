@@ -1,0 +1,95 @@
+{
+  "id": 736396,
+  "num_rows": 100,
+  "file_format": "json",
+  "name": "Books",
+  "array": true,
+  "columns": [
+    {
+      "name": "BookCode",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": "\"BK\" + this.to_s.rjust(3,\"0\")"
+    },
+    {
+      "name": "Title",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "Dế Mèn Phiêu Lưu Ký",
+        "Tắt Đèn",
+        "Số Đỏ",
+        "Nhà Giả Kim",
+        "Đắc Nhân Tâm",
+        "Harry Potter",
+        "Sherlock Holmes"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": ""
+    },
+    {
+      "name": "Author",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "Tô Hoài",
+        "Ngô Tất Tố",
+        "Vũ Trọng Phụng",
+        "Paulo Coelho",
+        "Dale Carnegie",
+        "J.K. Rowling",
+        "Arthur Conan Doyle"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "Genre",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "Văn học",
+        "Khoa học",
+        "Thiếu nhi",
+        "Trinh thám",
+        "Kỹ năng sống",
+        "Lịch sử"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "PublicationYear",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1900,
+      "max": 2026,
+      "decimals": 0,
+      "formula": null
+    },
+    {
+      "name": "Publisher",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "NXB Kim Đồng",
+        "NXB Trẻ",
+        "NXB Giáo Dục",
+        "NXB Văn Học",
+        "NXB Tổng Hợp"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "ImageUrl",
+      "null_percentage": 0,
+      "type": "Blank",
+      "formula": null
+    }
+  ]
+}

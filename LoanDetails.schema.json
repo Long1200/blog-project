@@ -1,0 +1,63 @@
+{
+  "id": 736400,
+  "num_rows": 1000,
+  "file_format": "csv",
+  "name": "LoanDetails",
+  "include_header": true,
+  "columns": [
+    {
+      "name": "LoanDetailId",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": null
+    },
+    {
+      "name": "LoanId",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 450,
+      "decimals": 0,
+      "formula": null
+    },
+    {
+      "name": "BookCopyId",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 400,
+      "decimals": 0,
+      "formula": null
+    },
+    {
+      "name": "ReturnDate",
+      "null_percentage": 10,
+      "type": "Datetime",
+      "min": "1/1/2024",
+      "max": "12/31/2028",
+      "format": "%Y-%m-%d",
+      "formula": null
+    },
+    {
+      "name": "Status",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "0",
+        "2",
+        "3"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    }
+  ]
+}

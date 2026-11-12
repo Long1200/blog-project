@@ -1,0 +1,75 @@
+{
+  "id": 736401,
+  "num_rows": 1000,
+  "file_format": "csv",
+  "name": "CompensationCases",
+  "include_header": true,
+  "columns": [
+    {
+      "name": "CompensationCaseId",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 800,
+      "decimals": 0,
+      "formula": null
+    },
+    {
+      "name": "LoanDetailId",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": null
+    },
+    {
+      "name": "CardNumber",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 100,
+      "decimals": 0,
+      "formula": "\"TV\" + random(1,200).to_s.rjust(4,\"0\")"
+    },
+    {
+      "name": "Reason",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "0",
+        "1"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "CreatedDate",
+      "null_percentage": 0,
+      "type": "Datetime",
+      "min": "1/1/2025",
+      "max": "12/31/2026",
+      "format": "%Y-%m-%d",
+      "formula": null
+    },
+    {
+      "name": "IsResolved",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "0",
+        "1"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "ResolvedDate",
+      "null_percentage": 0,
+      "type": "Datetime",
+      "min": "1/1/2025",
+      "max": "12/31/2026",
+      "format": "%Y-%m-%d",
+      "formula": null
+    }
+  ]
+}

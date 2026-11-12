@@ -1,0 +1,42 @@
+{
+  "id": 736399,
+  "num_rows": 450,
+  "file_format": "csv",
+  "name": "Loans",
+  "include_header": true,
+  "columns": [
+    {
+      "name": "LoanId",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": ""
+    },
+    {
+      "name": "CardNumber",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 200,
+      "decimals": 0,
+      "formula": "\"TV\" + this.to_s.rjust(4,\"0\")"
+    },
+    {
+      "name": "LoanDate",
+      "null_percentage": 0,
+      "type": "Datetime",
+      "min": "3/1/2026",
+      "max": "5/31/2026",
+      "format": "%Y/%m/%d",
+      "formula": null
+    },
+    {
+      "name": "DueDate",
+      "null_percentage": 0,
+      "type": "Datetime",
+      "min": "3/15/2026",
+      "max": "6/15/2026",
+      "format": "%Y/%m/%d",
+      "formula": "(Time.parse(field('LoanDate').to_s) + 15*86400).strftime(\"%Y/%m/%d\")"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": 736398,
+  "num_rows": 400,
+  "file_format": "csv",
+  "name": "BookCopies",
+  "include_header": true,
+  "columns": [
+    {
+      "name": "BookCopyId",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": null
+    },
+    {
+      "name": "BookCode",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "VH016",
+        "GT001",
+        "AB123",
+        "XZ999"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": "\"BK\" + random(1,100).to_s.rjust(3,\"0\")"
+    },
+    {
+      "name": "ControlNumber",
+      "null_percentage": 0,
+      "type": "Character Sequence",
+      "format": "",
+      "formula": "\"CN\" + field('BookCopyId').to_s.rjust(5,\"0\")"
+    },
+    {
+      "name": "Status",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "Note",
+      "null_percentage": 90,
+      "type": "Blank",
+      "formula": null
+    }
+  ]
+}
